@@ -61,6 +61,11 @@
         max-width: 1318px;
         width: 80%;
     }
+
+    .section-title{
+    font-size:2.5rem;
+    font-weight: 800;
+}
     /* header styles */
     /* navbar related styles */
 
@@ -128,9 +133,7 @@
     flex:1;
 }
 
-.team-title{
-    font-size:2.5rem;
-}
+
 #quic-list{
     font-weight: 400;
 }
@@ -139,6 +142,46 @@
     font-size: 1rem;
     line-height: 1.5rem;
     margin:24px 0;
+}
+/* 
+faction section */
+
+.fact-section{
+    max-width: 1390px;
+    width: 90%;
+    
+}
+
+.fact-description{
+    margin-top: 24px;
+    max-width: 540px;
+    line-height: 20px;
+}
+
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top:70px;
+}
+.fact-card{
+    height: 241px;
+    width: 241px;
+    border:1px solid #FF900E;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fact-card img{
+    height: 45px;
+    width: 45px;
+}
+.fact-card h1{
+    font-size: 2.8rem;
+}
+
+.fact-card h5{
+    font-size: 1rem;
 }
 
 @media  screen and (max-width:576px) {
@@ -188,6 +231,7 @@
         
     </header>
     <main>
+        <!-- team section start -->
         <section class="team kom-width display-felx">
              <div class="team-Image">
               <div>
@@ -204,11 +248,54 @@
                </div>
              </div>
              <div class="team-info">
-                <h3 class="team-title"><span id="quic-list" class="text-light-gray">Quick list </span><span id="of-our">of Our</span><span class="fature text-primary"> Features</span></h3>
+                <h3 class="section-title"><span id="quic-list" class="text-light-gray">Quick list </span><span id="of-our">of Our</span><span class="fature text-primary"> Features</span></h3>
                 <p class="text-light-gray team-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
                 <button class="btn-primary">Explore More</button>
              </div>
         </section>
+        <!-- features will enjoy -->
+         <section class="fact-section">
+            <h3 class="section-title">Some Facts</h3>
+            <p class="text-light-gray fact-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            <div class="fact-container">
+                <div class="fact-card display-felx">
+                    <div>
+                    <img src="./images/icons/ribon.png" alt="">
+                    <h1>54</h1>
+                    <h5 class="text-light-gray">Awards winnings</h5>
+                    </div>
+                </div>
+
+                <div class="fact-card display-felx">
+                    <div>
+                        <img src="./images/icons/projects.png" alt="">
+                    <h1>1458</h1>
+                    <h5 class="text-light-gray">Project Finished</h5>
+                    </div>
+                </div>
+
+                <div class="fact-card display-felx">
+                    <div>
+                         <img src="./images/icons/customers.png" alt="">
+                    <h1>590</h1>
+                    <h5 class="text-light-gray">Client Worked</h5>
+                    </div>
+                  
+                </div>
+
+                <div class="fact-card display-felx">
+                    <div>
+                       <img src="./images/icons/email.png" alt="">
+                    <h1>22578</h1>
+                    <h5 class="text-light-gray">Email Send</h5>
+                    </div>
+                   
+                </div>
+            </div>
+         </section>
+
+         <!-- some facts -->
+          <section class="some-facts"></section>
     </main>
     <footer></footer>
 </body>
