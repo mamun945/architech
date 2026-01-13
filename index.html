@@ -185,28 +185,137 @@ faction section */
     font-size: 1rem;
 }
 
+/* sponsers related style */
+
+.our-sponspors{
+    max-width: 1440px;
+    width: 90%;
+}
+
+.sponsers-info{
+    display: flex;
+    justify-content:center;
+    margin-bottom:50px;
+}
+.sponsers-info div{
+    max-width: 540px;
+    text-align: center;
+}
+
+.sponsers-img{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+.sponsers-img img{
+    filter: grayscale(1);
+}
+
+/* features section */
+.features-section{
+max-width: 1440px;
+width: 90%;
+margin: 100px auto 0;
+gap:146px
+
+}
+.fature-info{
+    flex: 1;
+}
+
+.fature-image{
+    flex:1;
+    position: relative;
+}
+.fature-image img{
+    width: 100%;
+    height: 90%;
+}
+
+.fature-img-btn{
+  position: absolute;
+  left: -10%;
+  bottom: 5%;
+}
+
+.title-info{
+    
+}
+
+.title-info h1{
+    border-left: 5px solid #FF900E;
+    font-size: 2.8rem;
+    margin-bottom:24px;
+    padding-left: 15px;
+}
+.fature-card{
+    padding:30px;
+    margin-top:8px;
+}
+
+.fature-card h4{
+    margin-bottom:8px;
+}
+
+footer{
+    max-width: 1440px;
+    width: 90%;
+    padding:30px 0;
+    text-align: center;
+    margin:130px auto 0;
+}
+
 @media  screen and (max-width:576px) {
-    nav,.nav-links,.team{
+    nav,.nav-links,.team,.features-section{
         flex-direction: column;
         gap:40px;
     }
 
-  .team-Image,.fact-container{
+  .team-Image,
+  .fact-container{
     grid-template-columns: repeat(1, 1fr);
 }
 
+  .sponsers-img{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap:20px;
+  }
+
 .fact-container{
     justify-items: center;
-    gap:24px;
+    grid-row-gap:10px;
 }
+
+.fature-img-btn{
+  left: 4%;
+  bottom:-2%;
+}
+
 
 }
 
 /* medium size device */
 @media screen and (min-width:576px) and (max-width:992px){
-    .team{
+    .team,.features-section{
         flex-direction: column;
     }
+    .fact-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap:50px;
+    }
+.fature-img-btn{
+  left: 4%;
+  bottom:-2%;
+}
+
+.sponsers-img{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap:10px;
+  }
+
 }
 
     </style>
@@ -259,7 +368,44 @@ faction section */
                 <button class="btn-primary">Explore More</button>
              </div>
         </section>
+
         <!-- features will enjoy -->
+         <section class="features-section display-felx">
+              <div class="fature-info">
+                <div class="title-info">
+                   <h1>Features you will <br> love & enjoy</h1>
+                   <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                </div>
+                <div class="fature-card">
+                    <h4>Dexktop & Mobile Version</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                </div>
+
+                 <div class="fature-card">
+                    <h4>Dexktop & Mobile Version</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                </div>
+
+                 <div class="fature-card">
+                    <h4>Dexktop & Mobile Version</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                </div>
+
+                 <div class="fature-card">
+                    <h4>Dexktop & Mobile Version</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                </div>
+              </div>
+              <div class="fature-image">
+                <img src="./images/architect.png" alt="">
+                <button class="btn-primary fature-img-btn">
+                    <span>10+Year</span> <br>
+                    <span>Experience</span>
+                </button>
+              </div>
+         </section>
+
+        <!-- fact section  -->
          <section class="fact-section">
             <h3 class="section-title">Some Facts</h3>
             <p class="text-light-gray fact-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
@@ -301,8 +447,27 @@ faction section */
          </section>
 
          <!-- some facts -->
-          <section class="some-facts"></section>
+           <section class="our-sponspors">
+            <div class="sponsers-info">
+                <div>
+                   <h2 class="section-title">Our sponspors</h2>
+                   <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                </div>
+           
+            </div>
+
+            <div class="sponsers-img">
+                <img src="./images/sponsors/spotify.png" alt="">
+                <img src="./images/sponsors/amazon.png" alt="">
+                <img src="./images/sponsors/google.png" alt="">
+                <img src="./images/sponsors/telerama.png" alt="">
+                <img src="./images/sponsors/figma.png" alt="">
+            </div>
+            
+          </section>
     </main>
-    <footer></footer>
+    <footer class="bg-light">
+            <p class="text-light-gray">All rights reserved copyright@2023 startup landing page design</p>
+    </footer>
 </body>
 </html>
